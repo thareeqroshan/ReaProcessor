@@ -141,7 +141,7 @@ OUTPATTERN $item
     #     print(f"Reaper output: {e.output}")
 
 def main():
-    parser = argparse.ArgumentParser(description='Automatically create new play events from the selection and replicate the work unit hierarchy.')
+    parser = argparse.ArgumentParser(description='Apply Reaper FX Chains to multiple sound SFX objects in Wwise')
     parser.add_argument('ids', metavar='GUID', nargs='*', help='One or many guid of the form {01234567-89ab-cdef-0123-4567890abcde}. The script retrieves the current selected if no GUID specified.')
 
     args = parser.parse_args()
